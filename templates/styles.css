@@ -1,0 +1,21 @@
+#navHeader{
+	background-color:#d3d3d3;
+}
+
+#mainContainer{
+	background-color:#fff;
+	margin:20px 20px 20px 20px;
+}
+
+#sendIt {
+	cursor:pointer;
+}
+
+.margin-body{
+	margin:20px 20px 20px 20px;
+}
+
+.img-shrink {
+	max-width: 70%;
+	height: auto;
+}

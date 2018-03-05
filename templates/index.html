@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		
+		<title>Gram Scraper</title>
+	</head>
+
+	<body>
+		<div id="navHeader">
+			<nav class="navbar">
+				<div class="container">
+					<h1>Gram Scraper</h1>
+				</div>
+			</nav>
+		</div>
+		<div id="mainContainer">
+			<div class="container main-content">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-header">
+								<h5>Enter the Link Below</h5>
+							</div>
+							<div class="card-body">
+								<div class="margin-body">
+									<div class="col-sm-12">
+										<form action="/greeting" method="POST" id="greetingForm">
+											<div class="input-group">
+												<input id="name" name="name" type="text" class="form-control" placeholder="Enter link here...">
+												<div class="input-group-append">
+													<button id="sendIt" class="btn btn-success" type="button" onclick="document.getElementById('greetingForm').submit()">Send it!</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="text" id="name" name="name">
+			<label class="mdl-textfield__label" for="name">Enter your name:</label>
+		</div>
+
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="document.getElementById('greetingForm').submit()">Submit</button>
+		-->
+	</body>
+</html>
